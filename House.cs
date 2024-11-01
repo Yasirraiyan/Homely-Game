@@ -17,6 +17,7 @@ public class House
     public bool doorscondition = false;
     public int x;
     public int y;
+    public int z;
     public bool furniturecondition = false;
     public House(double length, double breadth, string roomtype, double lengthofbedroom, double breadthofbedroom, double lengthofkitchen, double breadthofkitchen, double lengthofveranda, double breadthofveranda, double lengthoftoilet, double breadthoftoilet, int windows, int doors, bool windowscondition, bool doorscondition, int x, int y, bool furniturecondition)
     {
@@ -37,7 +38,14 @@ public class House
         this.doorscondition = doorscondition;
         this.x = x;
         this.y = y;
+        
         this.furniturecondition = furniturecondition;
+    }
+    public House(int x,int y,int z)
+    {
+        this.x=x;
+        this.y=y;
+        this.z=z;
     }
     public (double,double) checklengthvalidity(double length,double breadth)
     {
@@ -265,7 +273,7 @@ public class House
         }
         return (x, y);
     }
-    public (int,int,int) getpisitionofpersonin3-Dcoordinates(int x,int y,int z)
+    public (int,int,int) getpisitionofpersonin3-D-coordinates(int x,int y,int z)
     {
         Console.WriteLine($"The present location of person in 3-D coordinates is in:{x,y,z}");
         return(x,y,z);
