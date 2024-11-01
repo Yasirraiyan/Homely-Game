@@ -156,6 +156,6 @@ class Program
         Console.WriteLine(h9.getpositionofperson(1, -1));
         h9.gettypeoffurniture(false);
         House h10=new House(4,5.-8);
-        Console.WriteLine(h10.(4,5.-8);
+        Console.WriteLine(h10.positionin3-D-coordinates(4,5,-8);
     }
 }
