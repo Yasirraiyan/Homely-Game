@@ -223,7 +223,7 @@ public class House
         return (windowscondition, doorscondition);
     }
 
-    public (int, int) getpositionofperson(int x, int y)
+    public (int, int) getpositionofpersonin2-D-System(int x, int y)
     {
         Console.WriteLine($"The present location of the person is: {x}, {y}");
 
@@ -264,6 +264,11 @@ public class House
             Console.WriteLine($"The current location is on the negative side of the y-axis. The location is: {x}, {y}");
         }
         return (x, y);
+    }
+    public (int,int,int) getpisitionofpersonin3-Dcoordinates(int x,int y,int z)
+    {
+        Console.WriteLine($"The present location of person in 3-D coordinates is in:{x,y,z}");
+        return(x,y,z);
     }
     public void gettypeoffurniture(bool furniturecondition)
     {
